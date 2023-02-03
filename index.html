@@ -48,10 +48,7 @@
         </ul>
         <form class="d-flex" role="search">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active mx-1">
-              <a id="userlink" class="nav-link" href="#">Username</a>
-            </li>
-
+            
             <li class="nav-item active mx-1">
               <a id="signoutlink" class="nav-link" href="#">Sign Out</a>
             </li>
@@ -84,7 +81,7 @@
       sessionStorage.removeItem('user');
       localStorage.removeItem('user');
       localStorage.removeItem('keepLoggedIn');
-      window.location = "https://igdtuwresource.github.io/home/";
+      window.location = "https://igdtuwresource.github.io/Book-Buffet/";
     }
 
     window.onload = function(){
@@ -103,16 +100,12 @@
 
       }
       else{
-        userlink.innerText= currentUser.Username;
-        header.innerText = "welcome" + currentUser.fullname;
-        userlink.classList.replace("btn", "nav-link");
-        userlink.classList.add("btn-primary");
-        userlink.href= "#";
+        
 
         signoutlink.innerText="Sign Out";
         signoutlink.classList.replace("btn", "nav-link");
         signoutlink.classList.add("btn-success");
-        signoutlink.href= "javascript:Signout()";
+        signoutlink.href= "https://igdtuwresource.github.io/Book-Buffet/";
       }
     }
   </script>
