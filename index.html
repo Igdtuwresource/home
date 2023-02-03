@@ -49,11 +49,11 @@
         <form class="d-flex" role="search">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active mx-1">
-              <a id="userlink" class="nav-link" href="">Username</a>
+              <a id="userlink" class="nav-link" href="#">Username</a>
             </li>
 
             <li class="nav-item active mx-1">
-              <a id="signoutlink" class="nav-link" href="">Sign Out</a>
+              <a id="signoutlink" class="nav-link" href="#">Sign Out</a>
             </li>
           </ul>
            </form>
@@ -84,8 +84,7 @@
       sessionStorage.removeItem('user');
       localStorage.removeItem('user');
       localStorage.removeItem('keepLoggedIn');
-      window.location = "home";
-
+      window.location = "https://igdtuwresource.github.io/home/";
     }
 
     window.onload = function(){
@@ -94,17 +93,17 @@
         userlink.innerText="Create New Account";
         userlink.classList.replace("nav-link", "btn");
         userlink.classList.add("btn-primary");
-        userlink.href= "sinup";
+        userlink.href= "https://igdtuwresource.github.io/signup/";
 
         signoutlink.innerText="Login";
         signoutlink.classList.replace("nav-link", "btn");
         signoutlink.classList.add("btn-success");
-        signoutlink.href= "login";
+        signoutlink.href= "https://igdtuwresource.github.io/login/";
 
 
       }
       else{
-        userlink.innerText= currentUser.username;
+        userlink.innerText= currentUser.Username;
         header.innerText = "welcome" + currentUser.fullname;
         userlink.classList.replace("btn", "nav-link");
         userlink.classList.add("btn-primary");
