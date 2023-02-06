@@ -14,6 +14,61 @@
       .navbar-brand{
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #a279b2, 0 0 20px #a279b2, 0 0 25px #a279b2, 0 0 30px #a279b2, 0 0 35px #a279b2;
       }
+      #myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 400px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #272525;
+  margin-bottom: 12px;
+  margin-top:20px;
+  margin-left:20px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width :800px;
+  border: 1px solid #232020;
+  font-size: 18px;
+  margin-left:20px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid rgb(128, 126, 125);
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+ 
+}
+#myTable td{
+  padding: 0.5rem;
+            border: 1px solid rgb(128, 126, 125);
+}
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+@media screen and (max-width:720px){
+  #myInput{
+    width:200px;
+  }
+  #myTable{
+    width:300px;
+    font-size:10px;
+    margin-left:1px;
+    padding:2px;
+  }
+  #myTable th{
+    padding:2px;
+  }
+  #myTable td{
+    padding:4px;
+  }
+}
     </style>
 </head>
 <body>
@@ -57,7 +112,68 @@
       </div>
     </div>
   </nav>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for books/notes.." title="Type in a name">
 
+  <table id="myTable">
+    <tr class="header">
+      <th >Book/<br> Notes Name</th>
+      <th >Author</th>
+      <th >Rent</th>
+      <th >Buy<br>Pay 25% of MRP(without ZUNO Regsitration) <br> Pay 15% of MRP (with ZUNO Registration)</th>
+      <th >Donate</th>
+
+    </tr>
+    <tr>
+      <td>Matrix Algebra Notes</td>
+      <td>Handwritten</td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/irjekFe5qxKMdh1L6';">Rent</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/D1XiGE8SXhuBUc1w5';">Buy</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://igdtuwresource.github.io/contact-book-buffet/';">Donate</button></td>
+
+    </tr>
+    <tr>
+      <td>Communication Skills Notes</td>
+      <td>Handwritten</td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/irjekFe5qxKMdh1L6';">Rent</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/D1XiGE8SXhuBUc1w5';">Buy</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://igdtuwresource.github.io/contact-book-buffet/';">Donate</button></td>
+
+    </tr>
+    <tr>
+      <td>HC VERMA (Part 1 & 2)</td>
+      <td>HC VERMA</td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/irjekFe5qxKMdh1L6';">Rent</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/D1XiGE8SXhuBUc1w5';">Buy</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://igdtuwresource.github.io/contact-book-buffet/';">Donate</button></td>
+
+    </tr>
+    <tr>
+      <td>NP BALI Part 2</td>
+      <td>NP BALI</td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/irjekFe5qxKMdh1L6';">Rent</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/D1XiGE8SXhuBUc1w5';">Buy</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://igdtuwresource.github.io/contact-book-buffet/';">Donate</button></td>
+
+    </tr>
+    <tr>
+      <td>Applied Chemistry</td>
+      <td>Jain and Jain</td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/irjekFe5qxKMdh1L6';">Rent</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/D1XiGE8SXhuBUc1w5';">Buy</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://igdtuwresource.github.io/contact-book-buffet/';">Donate</button></td>
+
+    </tr>
+    <tr>
+      <td>Applied Physics notes</td>
+      <td>Handwritten</td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/irjekFe5qxKMdh1L6';">Rent</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://forms.gle/D1XiGE8SXhuBUc1w5';">Buy</button></td>
+      <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://igdtuwresource.github.io/contact-book-buffet/';">Donate</button></td>
+
+    </tr>
+
+    
+  </table>
   <h3 id="hh"></h3>
   <script>
     let userlink = document.getElementById('userlink');
@@ -109,5 +225,25 @@
       }
     }
   </script>
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    </script>
 </body>
 </html>
